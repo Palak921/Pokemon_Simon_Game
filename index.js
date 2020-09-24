@@ -68,18 +68,18 @@ function nextSequence() {
 
     level++;
     $(".game-title").text("Level " + level);
-    if (level == 2) {
+    if (level == 4) {
         buttonColours.push("pink");
         buttonColours.push("white");
     }
-    if (level > 2) {
+    if (level > 4) {
 
 
         $("h2").html("Difficulty level:Medium");
         $(".remove").removeClass("btn1");
         $(".remove").addClass("small");
 
-    } else if (level > 5) {
+    } else if (level > 10) {
         $(".rainbow").addClass("rocket");
         $("h2").html("Difficulty level:Hard");
     } else if (level > 20) {
